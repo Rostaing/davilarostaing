@@ -69,6 +69,9 @@ col2.markdown(
         <a href="https://www.youtube.com/@RostaingAI" target="_blank">
             <button style="color: white; background-color: red; border: none; padding: 5px 10px; cursor: pointer;">YouTube</button>
         </a>
+        <a href="https://www.facebook.com/profile.php?id=61565731474908" target="_blank">
+            <button style="color: white; background-color: #1877F2; border: none; padding: 5px 10px; cursor: pointer;">Facebook</button>
+        </a>
         <a href="mailto:davilarostaing@gmail.com" target="_blank">
             <button style="color: white; background-color: #D44638; border: none; padding: 5px 10px; cursor: pointer;">Email</button>
         </a>
