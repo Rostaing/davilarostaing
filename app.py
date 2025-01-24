@@ -17,6 +17,14 @@ NAME = "Davila Rostaing"
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
+# Masquer le menu principal de Streamlit
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 # Choix de la langue
 lang = st.sidebar.selectbox("Choisir la langue / Choose language", ["Français", "English"])
 
