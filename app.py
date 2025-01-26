@@ -46,7 +46,7 @@ col1, col2 = st.columns([1,2])
 col1.markdown("<div style='margin-top: 50px;'>", unsafe_allow_html=True)
 
 # Redimensionner l'image (largeur x hauteur)
-image_resized = image.resize((252, 290))  # Largeur = 250px, Hauteur = 300px
+image_resized = image.resize((252, 290))  # Largeur = 252px, Hauteur = 290px
 col1.image(image_resized)
 
 col1.markdown("</div>", unsafe_allow_html=True)
@@ -92,23 +92,23 @@ if menu == tr("Compétences", "Skills"):
     with st.expander(tr("### Langages de programmation", "### Programming languages")):
         st.write("Python, R, Java, Scala, JavaScript, PHP, C, Ruby, Dax...")
 
-    with st.expander(tr("### Frameworks & Plateforme IA", "### Frameworks & AI platform")):
-        st.write("Streamlit, Langchain, Phidata, Embedchain, Keras, Tensorflow, PyTorch, Flask, Ruby on Rails, Hugging Face, Ollama, Langflow, FlowiseAI, MLflow...")
+    with st.expander(tr("### Frameworks · Plateformes IA", "### Frameworks · AI platforms")):
+        st.write("Streamlit, Langchain, Phidata, Embedchain, Keras, Tensorflow, PyTorch, Flask, Hugging Face, Ollama, Crewai, Groq, Langflow, FlowiseAI, MLflow, Ruby on Rails...")
     
     with st.expander(tr("### Base de données", "### Database")):
-        st.write("MongoDB, Neo4j, ChromaDB, Oracle, PostgreSQL, MySQL, SQL Sever, Sqlite...")
+        st.write("MongoDB, Neo4j, ChromaDB, Cassandra, Oracle, PostgreSQL, MySQL, SQL Sever, Sqlite...")
 
     with st.expander(tr("### Data Engineering", "### Data Engineering")):
-        st.write("Spark, Hadoop, SQL, SQLAlchemy, NoSQL, ETL, Denodo, Talend, Docker, Docling, Markitdown, HTML, JSON, API, VBA, Excel, Beautiful Soup, Scrapy, ScrapeGraphAI...")
+        st.write("Spark, PySpark, Hadoop, Microsoft Azure, Kafka, SQL, SQLAlchemy, NoSQL, ETL, ELT, Denodo, Talend, Docker, Docling, Markitdown, HTML, JSON, YAML, XML, API, Excel, Beautiful Soup, Scrapy, ScrapeGraphAI...")
     
     with st.expander(tr("### Data Analysis", "### Data Analysis")):
-        st.write("Pandas, Polars, Numpy, Power BI, Tableau, Seaborn, Matplotlib, Skimpy, dtale, Qlik Sense, Plotly, SAS, Knime, RStudio, Shiny, Jupyter Lab | Notebook...")
+        st.write("Pandas, Polars, Numpy, Power BI, Tableau, Seaborn, Matplotlib, Skimpy, dtale, Altair, Qlik Sense, Plotly, SAS, Knime, RStudio, Shiny, Jupyter Lab | Notebook...")
     
-    with st.expander(tr("### Machine Learning & Deep Learning", "### Machine Learning & Deep Learning")):
-        st.write("Regression, Classification, KNN, K-means, Random Forest, Isolation Forest, PCA, Ensemble, Yellowbrick, Scikit-learn, Scikit-image, Pillow, NLTK, Neattext, TextHero, Lazypredic, NLP, Computer Vision, ANN, CNN, RNN, LSTM, LLM, AI Agent, OpenCV, Transformers, Fine-tuning...")
+    with st.expander(tr("### Machine Learning · Deep Learning · IA", "### Machine Learning · Deep Learning · AI")):
+        st.write("Regression, Classification, XGBoost, CatBoost, Prohet, SciPy, Statsmodels, BERT, TextBlob, spaCy, KNN, K-Means, Random Forest, Isolation Forest, PCA, Ensemble, Logistic Regression, SVM, MLP, Decision Tree, Yellowbrick, Scikit-learn, Scikit-image, Pillow, NLTK, Neattext, TextHero, Lazypredic, NLP, Q-Learning, Deep-Q-Network, Computer Vision, ANN, CNN, RNN, LSTM, GAN, GRU, LLM, OpenCV, Transformers, Fine-tuning, RAG, CAG, AI Agents...")
     
-    with st.expander(tr("### Gestion de projets & Outils informatiques", "### Project Management & IT Tools")):
-        st.write("Agile, Jira, Slack, Trello, Microsoft Project, Pack Office, Git, Github, AnyDesk, TeamViewerQS, Canva, Windows, Linux, MacOS...")
+    with st.expander(tr("### Gestion de projets · Outils informatiques", "### Project Management · IT Tools")):
+        st.write("Agile, Jira, Slack, Trello, Microsoft Project, Pack Office, Git, Github, AnyDesk, TeamViewerQS, Canva, Windows, Linux, MacOS, VS Code, VirtualBox...")
 
 # ------------------------------- Section Expériences -------------------------------
 elif menu == tr("Expériences", "Experiences"):
@@ -269,7 +269,7 @@ elif menu == tr("Expériences", "Experiences"):
         """))
 
     with st.expander(tr("### Ingénieur logiciel · ACSI · Août 2019 - Décembre 2019 · Brazzaville, Congo", 
-                        "Software Engineer  · ACSI · Aug 2019 - Dec 2019 · Libreville, Congo")):
+                        "Software Engineer  · ACSI · Aug 2019 - Dec 2019 · Brazzaville, Congo")):
         st.markdown(tr("""  
         **Tâches effectuées :**  
         
@@ -340,7 +340,7 @@ elif menu == tr("Certifications", "Certifications"):
 # ------------------------------- Section Projets -------------------------------
 elif menu == tr("Projets", "Projects"):
     st.subheader(tr("Projets GitHub", "GitHub Projects"))
-    with st.expander(tr("Retrouvez mes projets en cliquant sur le lien ci-dessous", "Find my projects by clicking on the link below)")):
+    with st.expander(tr("Retrouvez mes projets en cliquant sur le lien ci-dessous", "Find my projects by clicking on the link below")):
         st.write(tr("**👉[GitHub](https://github.com/Rostaing)**", "**👉[GitHub](https://github.com/Rostaing)**"))
 
 # ------------------------------- Section Distinctions & récompenses ------------------------------- 
@@ -370,7 +370,7 @@ elif menu == tr("Organisations", "Organizations"):
 elif menu == tr("Centres d'intérêt", "Hobbies"):
     st.subheader(tr("Centres d'intérêt", "Hobbies"))
     with st.expander(tr("### Recherche", "### Research")):
-        st.write(tr("**Science de données, Analyse de donnée, Ingénieurie de données, Big Data, Machine Learning, Deep Learning, Traitement du Langage Naturel, IA générative, LLM, RAG, CAG, Agent IA, IAG...**", "**Data Science, Data Analytics, Data Engineering, Big Data, Machine Learning, Deep Learning, Natural Language Processing,Generative AI, LLM, RAG, CAG, Agent AI, AGI...**"))
+        st.write(tr("**Science de données, Analyse de donnée, Ingénieurie de données, Big Data, Machine Learning, Deep Learning, Traitement du Langage Naturel, IA générative, LLM, RAG, CAG, Agents IA, IAG...**", "**Data Science, Data Analytics, Data Engineering, Big Data, Machine Learning, Deep Learning, Natural Language Processing,Generative AI, LLM, RAG, CAG, AI Agents, AGI...**"))
     with st.expander(tr("### Sport", "### Sport")):
         st.write(tr("**Course à pied, Gym, Football, Basket, Golf**", "**Running, Gym, Football, Basket, Golf**"))
     with st.expander(tr("### Musique", "### Music")):
