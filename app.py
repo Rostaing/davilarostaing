@@ -11,7 +11,7 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 info_pic = current_dir / "assets" / "info.png"
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Davila Rostaing | Digital CV "
+PAGE_TITLE = "Davila Rostaing | CV "
 PAGE_ICON = "assets/logo.jpg"
 NAME = "Davila Rostaing"
 
@@ -66,7 +66,7 @@ col2.markdown(
         <a href="https://www.linkedin.com/in/davila-rostaing" target="_blank">
             <button style="color: white; background-color: #0073b1; border: none; padding: 5px 10px; cursor: pointer;">LinkedIn</button>
         </a>
-        <a href="https://www.youtube.com/@RostaingAI" target="_blank">
+        <a href="https://www.youtube.com/@RostaingAI?sub_confirmation=1" target="_blank">
             <button style="color: white; background-color: red; border: none; padding: 5px 10px; cursor: pointer;">YouTube</button>
         </a>
         <a href="https://www.facebook.com/profile.php?id=61565731474908" target="_blank">
@@ -99,16 +99,16 @@ if menu == tr("🧠 Compétences", "🧠 Skills"):
         st.write("MongoDB, Neo4j, ChromaDB, Cassandra, Oracle, PostgreSQL, MySQL, SQL Sever, Sqlite...")
 
     with st.expander(tr("### Data Engineering", "### Data Engineering")):
-        st.write("Spark, PySpark, Hadoop, Microsoft Azure, AWS, Kafka, SQL, SQLAlchemy, NoSQL, ETL, ELT, Denodo, Talend, Docker, OCRmyPDF, Mistral OCR, PyMuPDF4LLM, Docling, Markitdown, HTML, JSON, YAML, XML, API, Excel, Beautiful Soup, Scrapy, ScrapeGraphAI...")
+        st.write("Spark, PySpark, Hadoop, Microsoft Azure, AWS, Kafka, SQL, SQLAlchemy, NoSQL, ETL, ELT, Denodo, Talend, Docker, OCRmyPDF, Mistral OCR, Ollama OCR, PyMuPDF4LLM, Docling, Markitdown, HTML, JSON, YAML, XML, API, Excel, Beautiful Soup, Scrapy, ScrapeGraphAI...")
     
     with st.expander(tr("### Data Analysis", "### Data Analysis")):
-        st.write("Pandas, Polars, Numpy, Power BI, Tableau, Seaborn, Matplotlib, Skimpy, dtale, Altair, Qlik Sense, Plotly, SAS, Knime, RStudio, Shiny, Jupyter Lab | Notebook...")
+        st.write("Pandas, Polars, Numpy, Power BI, Tableau, Seaborn, Matplotlib, Skimpy, dtale, Altair, Qlik Sense, Plotly, SAS, Knime, RStudio, Shiny, Marimo, SweetViz, ydata-profiling, Jupyter Lab | Notebook...")
     
     with st.expander(tr("### Machine Learning · Deep Learning · IA", "### Machine Learning · Deep Learning · AI")):
         st.write("Regression, Classification, XGBoost, CatBoost, Prohet, SciPy, Statsmodels, BERT, TextBlob, spaCy, KNN, K-Means, Random Forest, Isolation Forest, PCA, Ensemble, Logistic Regression, SVM, MLP, Decision Tree, Yellowbrick, Scikit-learn, Scikit-image, Pillow, NLTK, Neattext, TextHero, Lazypredic, NLP, Q-Learning, Deep-Q-Network, Computer Vision, ANN, CNN, RNN, LSTM, GAN, GRU, LLM, OpenCV, Transformers, Fine-tuning, RAG, CAG, AI Agents...")
     
     with st.expander(tr("### Gestion de projets · Outils informatiques", "### Project Management · IT Tools")):
-        st.write("Agile, Jira, Slack, Trello, Microsoft Project, Pack Office, Git, Github, TeamViewerQS, AnyDesk, TeamViewerQS, Canva, Windows, Linux, MacOS, VS Code, VirtualBox...")
+        st.write("Agile, Jira, Slack, Trello, Microsoft Project, Pack Office, Git, Github, TeamViewerQS, AnyDesk, Canva, Windows, Linux, MacOS, VS Code, VirtualBox...")
 
 # ------------------------------- Section Expériences -------------------------------
 elif menu == tr("💼 Expériences", "💼 Experiences"):
@@ -384,4 +384,4 @@ elif menu == tr("⭐ Centres d'intérêt", "⭐ Hobbies"):
 date = datetime.date.today().year
 
 st.sidebar.markdown("---")
-st.sidebar.write(tr(f"© {date} Davila Rostaing · Digital CV", f"© {date} Diavila Rostaing · Digital CV"))
+st.sidebar.write(tr(f"© {date} Davila Rostaing · CV", f"© {date} Diavila Rostaing · CV"))
